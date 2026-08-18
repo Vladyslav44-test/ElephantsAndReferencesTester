@@ -35,6 +35,12 @@ namespace ElephantsAndReferencesTester
                     lucinda = holder;
                     Console.WriteLine("References have been swapped");
                 }
+                else if (number == '4')
+                {
+                    lloyd = lucinda;
+                    lloyd.EarSize = 4321;
+                    lloyd.WhoAmI();
+                }
                 else return;
                 Console.WriteLine();
             }
