@@ -41,6 +41,10 @@ namespace ElephantsAndReferencesTester
                     lloyd.EarSize = 4321;
                     lloyd.WhoAmI();
                 }
+                else if (number == '5')
+                {
+                    lucinda.SpeakTo(lloyd, "Hi, Lloyd!");
+                }
                 else return;
                 Console.WriteLine();
             }
