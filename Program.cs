@@ -12,7 +12,8 @@ namespace ElephantsAndReferencesTester
         {
             Elephant lucinda = new Elephant() { Name = "Lucinda", EarSize = 33 };
             Elephant lloyd = new Elephant() { Name = "Lloyd", EarSize = 40 };
-            Console.WriteLine("Press 1 for Lloyd, 2 for Lucinda, 3 to swap");
+            Console.WriteLine("Press 1 for Lloyd, 2 for Lucinda, 3 to swap,");
+            Console.WriteLine("4 to broke the program, 5 to Elephants speaking, any else to finish the program.");
             while (true)
             {
                 char number = Console.ReadKey(true).KeyChar;
@@ -43,7 +44,7 @@ namespace ElephantsAndReferencesTester
                 }
                 else if (number == '5')
                 {
-                    lucinda.SpeakTo(lloyd, "Hi, Lloyd!");
+                    lucinda.SpeakTo(lloyd, "Hi, " + lloyd.Name + "!");
                 }
                 else return;
                 Console.WriteLine();
